@@ -1,0 +1,221 @@
+body{ /*esto es para agregar un fondo*/
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+* { /*Ajustes para arreglar el contenido del texto, sin espacios de contenido, sin margen, quitar linea de abajo de enlaces y símbolos de los listados */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container { /*Para su anchura máxima cada ves que pasemos de 1200px se queda fijo*/
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.content { /*Esto para el fondo del contenido del menu*/
+    min-height: 100px;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0)20%,
+        rgb(99, 99, 99)100%
+    );
+}
+
+.menu{ /*Ajustes para colocar el menu de forma ordenada en la parte superior*/
+position: absolute; /*Puede colocarse también absolue o sticky*/
+top: 6px;
+left: 0;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo { /*Ajusta el tamaño y el color del logo, en este caso es métodos numéricos*/
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.menu .navbar ul li{ /*Esto hara que los enlaces se coloquen hacia la izquierda*/
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{ /*Esto para ajustar el tamaño, color y sin espacio de contenido (padding) de los parciales del menú */
+    font-size: 20px;
+    padding: 25px;
+    color: #ffffff;
+    display: block; /*Esto para que tome correctamente el espacio*/
+    font-weight: lighter; /* Para que tome correctamente el grosor de la letra*/
+}
+
+
+.menu .navbar ul li a:hover{ /*El color al pasar por encima el cursor*/
+    color: #7a7a7a;
+}
+
+#menu{ /*Desaparecer el menu en la página web*/
+    display: none;
+}
+
+.menu-icono{ /*El tamaño del menu (las tres barras)*/
+    width: 30px;
+}
+
+.menu label { /*Cambiar a una mano al pasar por encima el cursor a un link o redirección*/
+    cursor: pointer;
+    display: none;
+}
+
+.H1{ /*La posición del título en la página web*/
+    color: white;
+     /*Arriba, derecha, abajo, izquierda*/
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    font-size: 50px;
+    background-color: black;
+}
+
+#position{
+    font-size: 30px;
+    text-shadow: 3px 5px 5px grey;
+    position: fixed; 
+    right: 20px;
+    bottom: 10px;
+}
+
+@media(max-width:991px) {
+
+    .content{
+        min-height: 100px; /*Cambia el tamaño de la barra de menú de "Métodos numéricos"*/
+    }
+
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label{ /*Para generar el menú de hamburguesa*/
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 135%;
+        left: 50%;
+        right: 0;
+        background-color:rgb(0, 0, 0);
+        display: none;
+        box-shadow: -8px 8px 8px grey;
+    }
+
+    .menu .navbar ul li{ /*Esto para que el menu de hamburguesa tome forma vertical*/
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{ /*funciona para ocultar el menu y abrirse al momento de seleccionar las tres barras*/
+        display: initial;
+    }
+
+}
+
+.metodos{
+    text-align: center;
+
+}
+
+.metodos li{
+    font-size: 30px;
+    margin: 10px;
+    padding: 50px;
+    background-color: grey;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.metodos li:hover {
+    background-color: rgb(80, 80, 80)
+}
+
+.metodos li a{
+    color: white;
+}
+
+li a{
+    transition: color 0.3s ease;
+}
+
+.parrafo p{
+    margin: 100px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.parrafo h1{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.captura{
+    text-align: center;
+
+}
+
+.links{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 40px;
+    font-size: 17.5px;
+
+}
+
+.link1{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-right: 30px;
+    background-color: black;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+
+}
+.link2{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-left: 30px;
+    background-color: black;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+
+}
+
+.link1:hover{
+    background-color: #7a7a7a;
+
+    }
+.link2:hover{
+    background-color: #7a7a7a;
+
+}
