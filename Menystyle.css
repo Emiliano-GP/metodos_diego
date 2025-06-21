@@ -52,6 +52,17 @@ justify-content: space-between;
     
 }
 
+@media(max-width:720px) {
+    .logo { 
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    }
+    
+}
+
 .menu .navbar ul li{ /*Esto hara que los enlaces se coloquen hacia la izquierda*/
     position: relative;
     float: left;
@@ -169,10 +180,8 @@ li a{
     display: flex;
     padding: 40px;
     color: black;
-    line-height: 50px;
     font-size: 20px;
     text-align: justify;
-    border-radius: 20px;
 
 }
 
@@ -182,8 +191,29 @@ li a{
     
 }
 
+@media(max-width:720px) {
+
+    .parrafo p{
+    
+    display: flex;
+    padding: 40px;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+
+}
+}
+
 .captura{
     text-align: center;
+
+}
+
+@media(max-width:720px) {
+    .captura img{
+    max-width: 380px;
+
+    }
 
 }
 
@@ -195,6 +225,7 @@ li a{
     font-size: 17.5px;
 
 }
+
 
 .link1{
     text-align: center;
@@ -248,4 +279,26 @@ li a{
 
 .regresar:hover {
     background-color: #7a7a7a;
+}
+
+@media(max-width:720px) {
+
+    .links{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 40px;
+    font-size: 20px;
+
+    }
+
+    .back {
+
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px;
+    font-size: 20px;
+
+}
+
 }
