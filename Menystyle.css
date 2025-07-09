@@ -220,7 +220,7 @@ li a{
 
 .captura{
     text-align: center;
-
+    width: auto;
 }
 
 @media(max-width:720px) {
